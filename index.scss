@@ -1,0 +1,655 @@
+// Global colors
+
+$midnight-green: #014e56;
+$light-coral: #f67e7e;
+$white: #ffffff;
+$rapture-blue: #79c8c7;
+$police-blue: #2c6269;
+$deep-jungle-green: #004047;
+$sacramento-green: #012f34;
+$dark-green: #002529;
+
+// Typography
+
+@font-face {
+  font-family: "Livvic-Bold";
+  src: url(assets/Fonts/Livvic-Bold.ttf);
+  src: url(assets/Fonts/Livvic-SemiBold.ttf);
+}
+$livvic: "Livvic-Bold";
+
+.h1-large {
+  font-size: 100px;
+  line-height: 100px;
+  font-family: "Livvic-Bold";
+}
+
+.h1-small {
+  font-size: 64px;
+  line-height: 56px;
+  font-family: "Livvic-Bold";
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+  font-family: "Livvic-Bold";
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Livvic-Bold";
+}
+
+.body1-semibold {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Livvic-Bold";
+}
+
+.body2-semibold {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Livvic-SemiBold";
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  border-radius: 25px;
+  padding: 8px 33px;
+  font-family: "Livvic-Bold";
+  font-size: 18px;
+  cursor: pointer;
+}
+
+a:is(:link, :active, :visited).active {
+  color: $light-coral;
+}
+
+.btn-normal-state {
+  border: 2px solid $white;
+  background-color: transparent;
+  color: $white;
+  &:hover {
+    border: 2px solid $midnight-green;
+    background-color: $white;
+    color: $midnight-green;
+  }
+}
+
+.btn-normal-state-dark {
+  border: 2px solid $sacramento-green;
+  background-color: transparent;
+  color: $sacramento-green;
+  &:hover {
+    border: 2px solid $sacramento-green;
+    background-color: $sacramento-green;
+    color: $white;
+  }
+}
+
+body {
+  background-color: $midnight-green;
+}
+
+////////////////////////HEADER///////////////////////
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 73px;
+
+  .left-nav {
+    display: inherit;
+    .logo {
+      align-self: center;
+    }
+  }
+  nav {
+    align-self: center;
+    ul {
+      display: flex;
+      padding-left: 60px;
+
+      li {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        a {
+          text-decoration: none;
+          color: $white;
+          font-family: "Livvic-Bold";
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .right-nav {
+    align-self: center;
+    button {
+      border: 2px solid $white;
+      background-color: transparent;
+      color: $white;
+      &:hover {
+        border: 2px solid $midnight-green;
+        background-color: $white;
+        color: $midnight-green;
+        a {
+          color: $midnight-green;
+        }
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/////////////////////////HERO//////////////////////////
+.image-out-of-container {
+  position: relative;
+  .image-out {
+    position: absolute;
+    left: -120px;
+    top: 22%;
+  }
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 129px;
+  .hero-title {
+    width: 50%;
+
+    h1 {
+      color: $white;
+
+      .h1-highlight {
+        color: $light-coral;
+      }
+    }
+  }
+}
+.hero-text {
+  width: 50%;
+  align-self: end;
+
+  .separator {
+    &:before {
+      content: "";
+      display: block;
+      border: 4px solid $rapture-blue;
+      width: 50px;
+      background-color: $rapture-blue;
+      margin-left: 100px;
+    }
+  }
+  p {
+    color: $white;
+    padding-top: 75px;
+    padding-left: 100px;
+  }
+  .image-hero {
+    text-align: right;
+    padding-top: 150px;
+  }
+}
+
+.home-about-us {
+  background-color: $sacramento-green;
+  padding: 140px 0;
+  position: relative;
+  .separator {
+    &:before {
+      content: "";
+      display: block;
+      border: 4px solid $light-coral;
+      width: 50px;
+      background-color: $light-coral;
+    }
+  }
+  .home-image-out-about-us-box {
+    text-align: right;
+    .home-image-out-about-us {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .home-about-us-content-section {
+    display: flex;
+    padding-top: 54px;
+    .home-about-us-title {
+      width: 50%;
+      h2 {
+        color: $white;
+        padding-right: 70px;
+      }
+    }
+    .home-about-us-list {
+      width: 50%;
+      .list-element {
+        display: flex;
+        padding-bottom: 32px;
+
+        .list-icon {
+          margin-right: 23px;
+        }
+        .list-content {
+          h3 {
+            color: $light-coral;
+            padding-bottom: 16px;
+          }
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+.home-testimonials {
+  padding: 140px 0;
+  position: relative;
+  .home-image-out-testimonials-box-left {
+    .home-image-out-testimonial-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.home-testimonals-title {
+  padding-bottom: 56px;
+  h2 {
+    text-align: center;
+    color: $white;
+  }
+}
+
+.home-testimonials-list {
+  display: flex;
+  .testimonial-element {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    .testimonial-content {
+      p {
+        color: $white;
+        z-index: 9;
+        margin-top: -16px;
+      }
+      h3 {
+        color: $rapture-blue;
+        padding-top: 24px;
+        padding-bottom: 2px;
+      }
+      h4 {
+        padding-bottom: 32px;
+        font-size: 13px;
+        font-style: italic;
+        color: $white;
+      }
+      img {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border: 2px solid #c4fffe;
+      }
+    }
+  }
+}
+
+.home-image-out-testimonials-box-right {
+  .home-image-out-testimmonial-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.home-cta {
+  background-color: $light-coral;
+  position: relative;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  .home-image-out-cta {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+  }
+  .cta-box {
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+      color: $sacramento-green;
+    }
+  }
+}
+
+footer {
+  background-color: $dark-green;
+  padding: 40px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .left-footer {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      nav {
+        padding-top: 25px;
+        ul {
+          display: flex;
+
+          a {
+            color: $white;
+            text-decoration: none;
+            padding-right: 40px;
+          }
+        }
+      }
+      p {
+        color: $white;
+      }
+    }
+    .third-column {
+      .social-media {
+        text-align: right;
+      }
+      a {
+        padding-right: 16px;
+      }
+      p {
+        padding-top: 51px;
+        color: $white;
+      }
+    }
+  }
+}
+
+/////////////////ABOUT PAGE/////////////////@at-root
+
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 120px 0;
+  .about-hero-title {
+    width: 30%;
+
+    h1 {
+      color: $white;
+      padding-top: 35px;
+
+      .h1-highlight {
+        color: $light-coral;
+      }
+    }
+  }
+}
+.about-hero-text {
+  width: 70%;
+  align-self: end;
+
+  .separator {
+    &:before {
+      content: "";
+      display: block;
+      border: 4px solid $light-coral;
+      width: 50px;
+      background-color: $light-coral;
+      margin-left: 50px;
+    }
+  }
+  p {
+    color: $white;
+    padding-top: 75px;
+    padding-left: 50px;
+  }
+  .about-image-hero {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.about-directors {
+  padding: 140px 0;
+  background-color: $deep-jungle-green;
+  position: relative;
+  .about-image-directors-left {
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .about-title {
+    h2 {
+      text-align: center;
+      color: $white;
+      padding-bottom: 64px;
+    }
+  }
+  .director-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 76px;
+    .director-box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: $sacramento-green;
+      width: 33.33%;
+      margin: 0 15px;
+      padding-top: 32px;
+      position: relative;
+
+      .director-image {
+        text-align: center;
+        img {
+          width: 96px;
+          height: 96px;
+          border-radius: 50%;
+          border: 2px solid $rapture-blue;
+        }
+      }
+      .director-details {
+        padding-top: 16px;
+        h3 {
+          color: $rapture-blue;
+        }
+        p {
+          font-style: italic;
+          color: $white;
+          padding-bottom: 28px;
+        }
+      }
+      .hover-button {
+        margin-bottom: -32px;
+        z-index: 99999;
+        button {
+          padding: 0;
+          border-radius: 0;
+          background-color: transparent;
+          border: 0;
+        }
+      }
+      .overlay-content {
+        position: absolute;
+        top: 0;
+        background-color: $dark-green;
+        width: 100%;
+        height: 100%;
+        .content {
+          padding: 35px 24px 63px 24px;
+
+          h3 {
+            color: $rapture-blue;
+          }
+          p {
+            color: $white;
+            padding: 8px 0 24px 0;
+            font-family: $livvic;
+          }
+          .social-media-directors {
+            a {
+              padding: 0 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-directors-image-out-right {
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.about-clients {
+  padding: 140px 0;
+  background-color: $sacramento-green;
+  position: relative;
+  .about-image-clients-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .about-title {
+    color: $white;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .clients-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-client {
+      width: 20%;
+
+      img {
+        width: 165px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.image-out-of-container {
+  position: relative;
+  .contact-image-left {
+    img {
+      position: absolute;
+      top: 17%;
+      left: 0;
+    }
+  }
+  .contact-image-right {
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+.contact-hero {
+  padding: 140px 0;
+  display: flex;
+  .contact-left-hero {
+    width: 50%;
+    .contact-title {
+      h1 {
+        color: $white;
+      }
+      .subtitle {
+        color: $light-coral;
+        font-size: 32px;
+        line-height: 48px;
+        font-family: $livvic;
+        padding-top: 30px;
+      }
+    }
+    .contact-list {
+      padding-top: 32px;
+      .list-element {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        .list-content {
+          p {
+            color: $white;
+          }
+        }
+        .list-icon {
+          margin-right: 23px;
+        }
+      }
+    }
+  }
+  .contact-right-hero {
+    width: 50%;
+    .contact-hero-form {
+      form {
+        label,
+        input,
+        textarea {
+          width: 100%;
+        }
+        input,
+        textarea {
+          background-color: transparent;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          border-bottom: 1px solid $white;
+          margin-bottom: 24px;
+        }
+        label {
+          font-family: $livvic;
+          color: $white;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 25px;
+          padding-left: 14px;
+          opacity: 0.6;
+        }
+        input[type="submit"] {
+          background-color: $white;
+          border-radius: 25px;
+          padding: 11px 33px;
+          font-family: $livvic;
+          font-size: 18px;
+          border: 1px solid $white;
+          cursor: pointer;
+          display: inline-block;
+          width: 123px;
+          color: $midnight-green;
+          &:hover {
+            background-color: transparent;
+            color: $white;
+            border: 1px solid $midnight-green;
+          }
+        }
+      }
+    }
+  }
+}

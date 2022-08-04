@@ -1,0 +1,589 @@
+@font-face {
+  font-family: "Livvic-Bold";
+  src: url(assets/Fonts/Livvic-Bold.ttf);
+  src: url(assets/Fonts/Livvic-SemiBold.ttf);
+}
+.h1-large {
+  font-size: 100px;
+  line-height: 100px;
+  font-family: "Livvic-Bold";
+}
+
+.h1-small {
+  font-size: 64px;
+  line-height: 56px;
+  font-family: "Livvic-Bold";
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+  font-family: "Livvic-Bold";
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Livvic-Bold";
+}
+
+.body1-semibold {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Livvic-Bold";
+}
+
+.body2-semibold {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Livvic-SemiBold";
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  border-radius: 25px;
+  padding: 8px 33px;
+  font-family: "Livvic-Bold";
+  font-size: 18px;
+  cursor: pointer;
+}
+
+a:is(:link, :active, :visited).active {
+  color: #f67e7e;
+}
+
+.btn-normal-state {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+.btn-normal-state:hover {
+  border: 2px solid #014e56;
+  background-color: #ffffff;
+  color: #014e56;
+}
+
+.btn-normal-state-dark {
+  border: 2px solid #012f34;
+  background-color: transparent;
+  color: #012f34;
+}
+.btn-normal-state-dark:hover {
+  border: 2px solid #012f34;
+  background-color: #012f34;
+  color: #ffffff;
+}
+
+body {
+  background-color: #014e56;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 73px;
+}
+header .left-nav {
+  display: inherit;
+}
+header .left-nav .logo {
+  align-self: center;
+}
+header nav {
+  align-self: center;
+}
+header nav ul {
+  display: flex;
+  padding-left: 60px;
+}
+header nav ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Livvic-Bold";
+  font-size: 18px;
+}
+header .right-nav {
+  align-self: center;
+}
+header .right-nav button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+header .right-nav button:hover {
+  border: 2px solid #014e56;
+  background-color: #ffffff;
+  color: #014e56;
+}
+header .right-nav button:hover a {
+  color: #014e56;
+}
+header .right-nav button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.image-out-of-container {
+  position: relative;
+}
+.image-out-of-container .image-out {
+  position: absolute;
+  left: -120px;
+  top: 22%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 129px;
+}
+.hero .hero-title {
+  width: 50%;
+}
+.hero .hero-title h1 {
+  color: #ffffff;
+}
+.hero .hero-title h1 .h1-highlight {
+  color: #f67e7e;
+}
+
+.hero-text {
+  width: 50%;
+  align-self: end;
+}
+.hero-text .separator:before {
+  content: "";
+  display: block;
+  border: 4px solid #79c8c7;
+  width: 50px;
+  background-color: #79c8c7;
+  margin-left: 100px;
+}
+.hero-text p {
+  color: #ffffff;
+  padding-top: 75px;
+  padding-left: 100px;
+}
+.hero-text .image-hero {
+  text-align: right;
+  padding-top: 150px;
+}
+
+.home-about-us {
+  background-color: #012f34;
+  padding: 140px 0;
+  position: relative;
+}
+.home-about-us .separator:before {
+  content: "";
+  display: block;
+  border: 4px solid #f67e7e;
+  width: 50px;
+  background-color: #f67e7e;
+}
+.home-about-us .home-image-out-about-us-box {
+  text-align: right;
+}
+.home-about-us .home-image-out-about-us-box .home-image-out-about-us {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.home-about-us .home-about-us-content-section {
+  display: flex;
+  padding-top: 54px;
+}
+.home-about-us .home-about-us-content-section .home-about-us-title {
+  width: 50%;
+}
+.home-about-us .home-about-us-content-section .home-about-us-title h2 {
+  color: #ffffff;
+  padding-right: 70px;
+}
+.home-about-us .home-about-us-content-section .home-about-us-list {
+  width: 50%;
+}
+.home-about-us .home-about-us-content-section .home-about-us-list .list-element {
+  display: flex;
+  padding-bottom: 32px;
+}
+.home-about-us .home-about-us-content-section .home-about-us-list .list-element .list-icon {
+  margin-right: 23px;
+}
+.home-about-us .home-about-us-content-section .home-about-us-list .list-element .list-content h3 {
+  color: #f67e7e;
+  padding-bottom: 16px;
+}
+.home-about-us .home-about-us-content-section .home-about-us-list .list-element .list-content p {
+  color: #ffffff;
+}
+
+.home-testimonials {
+  padding: 140px 0;
+  position: relative;
+}
+.home-testimonials .home-image-out-testimonials-box-left .home-image-out-testimonial-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home-testimonals-title {
+  padding-bottom: 56px;
+}
+.home-testimonals-title h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.home-testimonials-list {
+  display: flex;
+}
+.home-testimonials-list .testimonial-element {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.home-testimonials-list .testimonial-element .testimonial-content p {
+  color: #ffffff;
+  z-index: 9;
+  margin-top: -16px;
+}
+.home-testimonials-list .testimonial-element .testimonial-content h3 {
+  color: #79c8c7;
+  padding-top: 24px;
+  padding-bottom: 2px;
+}
+.home-testimonials-list .testimonial-element .testimonial-content h4 {
+  padding-bottom: 32px;
+  font-size: 13px;
+  font-style: italic;
+  color: #ffffff;
+}
+.home-testimonials-list .testimonial-element .testimonial-content img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2px solid #c4fffe;
+}
+
+.home-image-out-testimonials-box-right .home-image-out-testimmonial-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.home-cta {
+  background-color: #f67e7e;
+  position: relative;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+.home-cta .home-image-out-cta {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+.home-cta .cta-box {
+  display: flex;
+  justify-content: space-around;
+}
+.home-cta .cta-box h2 {
+  color: #012f34;
+}
+
+footer {
+  background-color: #002529;
+  padding: 40px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .left-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+footer .container .left-footer nav {
+  padding-top: 25px;
+}
+footer .container .left-footer nav ul {
+  display: flex;
+}
+footer .container .left-footer nav ul a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 40px;
+}
+footer .container .left-footer p {
+  color: #ffffff;
+}
+footer .container .third-column .social-media {
+  text-align: right;
+}
+footer .container .third-column a {
+  padding-right: 16px;
+}
+footer .container .third-column p {
+  padding-top: 51px;
+  color: #ffffff;
+}
+
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 120px 0;
+}
+.about-hero .about-hero-title {
+  width: 30%;
+}
+.about-hero .about-hero-title h1 {
+  color: #ffffff;
+  padding-top: 35px;
+}
+.about-hero .about-hero-title h1 .h1-highlight {
+  color: #f67e7e;
+}
+
+.about-hero-text {
+  width: 70%;
+  align-self: end;
+}
+.about-hero-text .separator:before {
+  content: "";
+  display: block;
+  border: 4px solid #f67e7e;
+  width: 50px;
+  background-color: #f67e7e;
+  margin-left: 50px;
+}
+.about-hero-text p {
+  color: #ffffff;
+  padding-top: 75px;
+  padding-left: 50px;
+}
+.about-hero-text .about-image-hero {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.about-directors {
+  padding: 140px 0;
+  background-color: #004047;
+  position: relative;
+}
+.about-directors .about-image-directors-left img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.about-directors .about-title h2 {
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 64px;
+}
+.about-directors .director-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 76px;
+}
+.about-directors .director-row .director-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #012f34;
+  width: 33.33%;
+  margin: 0 15px;
+  padding-top: 32px;
+  position: relative;
+}
+.about-directors .director-row .director-box .director-image {
+  text-align: center;
+}
+.about-directors .director-row .director-box .director-image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 2px solid #79c8c7;
+}
+.about-directors .director-row .director-box .director-details {
+  padding-top: 16px;
+}
+.about-directors .director-row .director-box .director-details h3 {
+  color: #79c8c7;
+}
+.about-directors .director-row .director-box .director-details p {
+  font-style: italic;
+  color: #ffffff;
+  padding-bottom: 28px;
+}
+.about-directors .director-row .director-box .hover-button {
+  margin-bottom: -32px;
+  z-index: 99999;
+}
+.about-directors .director-row .director-box .hover-button button {
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+}
+.about-directors .director-row .director-box .overlay-content {
+  position: absolute;
+  top: 0;
+  background-color: #002529;
+  width: 100%;
+  height: 100%;
+}
+.about-directors .director-row .director-box .overlay-content .content {
+  padding: 35px 24px 63px 24px;
+}
+.about-directors .director-row .director-box .overlay-content .content h3 {
+  color: #79c8c7;
+}
+.about-directors .director-row .director-box .overlay-content .content p {
+  color: #ffffff;
+  padding: 8px 0 24px 0;
+  font-family: "Livvic-Bold";
+}
+.about-directors .director-row .director-box .overlay-content .content .social-media-directors a {
+  padding: 0 8px;
+}
+.about-directors .about-directors-image-out-right img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.about-clients {
+  padding: 140px 0;
+  background-color: #012f34;
+  position: relative;
+}
+.about-clients .about-image-clients-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-clients .about-title {
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.about-clients .clients-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-clients .clients-row .logo-client {
+  width: 20%;
+}
+.about-clients .clients-row .logo-client img {
+  width: 165px;
+  height: auto;
+}
+
+.image-out-of-container {
+  position: relative;
+}
+.image-out-of-container .contact-image-left img {
+  position: absolute;
+  top: 17%;
+  left: 0;
+}
+.image-out-of-container .contact-image-right img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.contact-hero {
+  padding: 140px 0;
+  display: flex;
+}
+.contact-hero .contact-left-hero {
+  width: 50%;
+}
+.contact-hero .contact-left-hero .contact-title h1 {
+  color: #ffffff;
+}
+.contact-hero .contact-left-hero .contact-title .subtitle {
+  color: #f67e7e;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "Livvic-Bold";
+  padding-top: 30px;
+}
+.contact-hero .contact-left-hero .contact-list {
+  padding-top: 32px;
+}
+.contact-hero .contact-left-hero .contact-list .list-element {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.contact-hero .contact-left-hero .contact-list .list-element .list-content p {
+  color: #ffffff;
+}
+.contact-hero .contact-left-hero .contact-list .list-element .list-icon {
+  margin-right: 23px;
+}
+.contact-hero .contact-right-hero {
+  width: 50%;
+}
+.contact-hero .contact-right-hero .contact-hero-form form label,
+.contact-hero .contact-right-hero .contact-hero-form form input,
+.contact-hero .contact-right-hero .contact-hero-form form textarea {
+  width: 100%;
+}
+.contact-hero .contact-right-hero .contact-hero-form form input,
+.contact-hero .contact-right-hero .contact-hero-form form textarea {
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 24px;
+}
+.contact-hero .contact-right-hero .contact-hero-form form label {
+  font-family: "Livvic-Bold";
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 14px;
+  opacity: 0.6;
+}
+.contact-hero .contact-right-hero .contact-hero-form form input[type=submit] {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 11px 33px;
+  font-family: "Livvic-Bold";
+  font-size: 18px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  width: 123px;
+  color: #014e56;
+}
+.contact-hero .contact-right-hero .contact-hero-form form input[type=submit]:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #014e56;
+}/*# sourceMappingURL=index.css.map */
